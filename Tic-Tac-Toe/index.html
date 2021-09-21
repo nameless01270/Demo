@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app"></div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC4J0-TMay9Q_2_ug2OYvyW9IxwBTy5q2I",
+    authDomain: "tic-tac-toe-b544e.firebaseapp.com",
+    projectId: "tic-tac-toe-b544e",
+    storageBucket: "tic-tac-toe-b544e.appspot.com",
+    messagingSenderId: "347585962631",
+    appId: "1:347585962631:web:78098c74dc3284b9594e22"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore()
+</script>
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
